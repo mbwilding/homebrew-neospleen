@@ -9,4 +9,8 @@ class NeospleenNerdFont < Formula
     def install
         (share/"fonts").install "NeoSpleen-NerdFont.ttf"
     end
+
+    def post_install
+        system "cp", "-f", "#{share}/fonts/NeoSpleen-NerdFont.ttf", "#{ENV['HOME']}/Library/Fonts/"
+    end
 end
