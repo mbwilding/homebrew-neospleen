@@ -11,8 +11,4 @@ class Neospleen < Formula
         (share/"fonts").install "NeoSpleen.ttf"
         system "ln", "-s", "#{share}/fonts/NeoSpleen.ttf", fontpath
     end
-
-    def post_install
-        system "cp", "-f", "#{share}/fonts/NeoSpleen.ttf", "#{ENV['HOME']}/Library/Fonts/"
-    end
 end
