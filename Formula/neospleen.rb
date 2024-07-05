@@ -7,7 +7,9 @@ class Neospleen < Formula
     license "BSD-2-Clause"
 
     def install
+        fontpath = "/Library/Fonts/NeoSpleen.ttf"
         (share/"fonts").install "NeoSpleen.ttf"
+        system "ln", "-s", "#{share}/fonts/NeoSpleen.ttf", fontpath
     end
 
     def post_install
