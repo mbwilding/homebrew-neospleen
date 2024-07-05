@@ -7,8 +7,11 @@ class NeospleenNerdFont < Formula
     license "BSD-2-Clause"
 
     def install
-        fontpath = "#{ENV['HOME']}/Library/Fonts/NeoSpleen-NerdFont.ttf"
-        (share/"fonts").install "NeoSpleen-NerdFont.ttf"
-        system "ln", "-s", "#{share}/fonts/NeoSpleen-NerdFont.ttf", fontpath
+        fontname = "NeoSpleen-NerdFont.ttf"
+        fontpath = "#{ENV['HOME']}/Library/Fonts/#{fontname}"
+        (share/"fonts").install fontname
+        puts "Linking #{share}/fonts/#{fontname} to #{fontpath}"
+        system "ln", "-s", "#{share}/fonts/#{fontname}", fontpath
+        puts "Linked #{share}/fonts/#{fontname} to #{fontpath}"
     end
 end
