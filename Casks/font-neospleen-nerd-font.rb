@@ -1,14 +1,18 @@
 cask "font-neospleen-nerd-font" do
-    version "1.0.44"
-    desc "A modern monospaced font inspired by Spleen - Nerd Font"
-    homepage "https://github.com/mbwilding/NeoSpleen"
-    url "https://github.com/mbwilding/NeoSpleen/releases/download/#{version}/NeoSpleen-NerdFont.ttf"
-    sha256 "4d33bc7b27e1d87632c6d151677ae030fb3c6f5007692556f043f888505fa391"
+  version "1.0.57"
+  desc "A modern monospaced font inspired by Spleen - Nerd Font"
+  homepage "https://github.com/mbwilding/NeoSpleen"
+  url "https://github.com/mbwilding/NeoSpleen/releases/download/#{version}/NeoSpleenNerdFont-TTF.zip"
+  sha256 "7766ca254c02d22e6ec6ee3648e5d1e2a25aee7d78cf4a7fe435247fee6b5257"
 
-    livecheck do
-        url :url
-        strategy :github_latest
-    end
+  livecheck do
+    url :url
+    strategy :gitHub_latest
+  end
 
-    font "NeoSpleen-NerdFont.ttf"
+  font "NeoSpleenNerdFont-Regular.ttf"
+  font "NeoSpleenNerdFont-Medium.ttf"
+  font "NeoSpleenNerdFont-Bold.ttf"
+
+  # No zap stanza required
 end

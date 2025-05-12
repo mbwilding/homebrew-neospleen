@@ -1,14 +1,18 @@
 cask "font-neospleen" do
-    version "1.0.44"
-    desc "A modern monospaced font inspired by Spleen"
-    homepage "https://github.com/mbwilding/NeoSpleen"
-    url "https://github.com/mbwilding/NeoSpleen/releases/download/#{version}/NeoSpleen.ttf"
-    sha256 "01d9e7f332ae4d0390e3f230e711fde44904d39965c310ab9319c1e5fcf1e1b4"
+  version "1.0.57"
+  desc "A modern monospaced font inspired by Spleen"
+  homepage "https://github.com/mbwilding/NeoSpleen"
+  url "https://github.com/mbwilding/NeoSpleen/releases/download/#{version}/NeoSpleen-TTF.zip"
+  sha256 "b8b51f8600c839665ad734c533d5f57b249fb8e184b4730dab499e3adc9dc580"
 
-    livecheck do
-        url :url
-        strategy :github_latest
-    end
+  livecheck do
+    url :url
+    strategy :gitHub_latest
+  end
 
-    font "NeoSpleen.ttf"
+  font "NeoSpleen-Regular.ttf"
+  font "NeoSpleen-Medium.ttf"
+  font "NeoSpleen-Bold.ttf"
+
+  # No zap stanza required
 end
