@@ -3,7 +3,7 @@ cask "font-neospleen" do
   desc "A modern monospaced font inspired by Spleen"
   homepage "https://github.com/mbwilding/NeoSpleen"
   url "https://github.com/mbwilding/NeoSpleen/releases/download/#{version}/NeoSpleen-TTF.zip"
-  sha256 "b8b51f8600c839665ad734c533d5f57b249fb8e184b4730dab499e3adc9dc580  /tmp/artifact.zip"
+  sha256 "b8b51f8600c839665ad734c533d5f57b249fb8e184b4730dab499e3adc9dc580"
 
   livecheck do
     url :url
