@@ -1,9 +1,9 @@
 cask "font-neospleen-nerd-font" do
-  version "1.0.57"
+  version "1.0.62"
   desc "A modern monospaced font inspired by Spleen - Nerd Font"
   homepage "https://github.com/mbwilding/NeoSpleen"
   url "https://github.com/mbwilding/NeoSpleen/releases/download/#{version}/NeoSpleenNerdFont-TTF.zip"
-  sha256 "7766ca254c02d22e6ec6ee3648e5d1e2a25aee7d78cf4a7fe435247fee6b5257"
+  sha256 "fc44fc5181290bb793aea531bd46d4ce470baa23bc7348b5ffcc4d6b1f8f5b8a"
 
   livecheck do
     url :url
